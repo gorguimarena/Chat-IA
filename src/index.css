@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 67 32% 93%;
+    --foreground: 157 14% 35%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 157 14% 35%;
+
+    --popover: 67 32% 93%;
+    --popover-foreground: 157 14% 35%;
+
+    --primary: 123 21% 70%;
+    --primary-foreground: 157 14% 20%;
+
+    --secondary: 71 23% 81%;
+    --secondary-foreground: 157 14% 35%;
+
+    --muted: 71 23% 81%;
+    --muted-foreground: 157 14% 56%;
+
+    --accent: 157 14% 56%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 71 23% 81%;
+    --input: 71 23% 81%;
+    --ring: 123 21% 70%;
+
+    --radius: 1rem;
+
+    --user-message: 123 21% 70%;
+    --user-message-foreground: 157 14% 20%;
+    --ai-message: 71 23% 81%;
+    --ai-message-foreground: 157 14% 35%;
+    
+    --chat-background: 67 32% 93%;
+    
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --shadow-message: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    --shadow-input: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+    --sidebar-background: 67 32% 93%;
+
+    --sidebar-foreground: 157 14% 35%;
+
+    --sidebar-primary: 157 14% 56%;
+
+    --sidebar-primary-foreground: 0 0% 100%;
+
+    --sidebar-accent: 71 23% 81%;
+
+    --sidebar-accent-foreground: 157 14% 35%;
+
+    --sidebar-border: 71 23% 81%;
+
+    --sidebar-ring: 123 21% 70%;
+  }
+
+  .dark {
+    --background: 222 47% 11%;
+    --foreground: 210 40% 98%;
+
+    --card: 222 47% 15%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222 47% 15%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 217 91% 60%;
+    --primary-foreground: 222 47% 11%;
+
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+
+    --accent: 217 91% 60%;
+    --accent-foreground: 222 47% 11%;
+
+    --destructive: 0 62% 50%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 217 91% 60%;
+
+    --user-message: 217 91% 60%;
+    --user-message-foreground: 222 47% 11%;
+    --ai-message: 217 32% 17%;
+    --ai-message-foreground: 210 40% 98%;
+
+    --chat-background: 222 47% 11%;
+    --sidebar-background: 222 47% 15%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 217 91% 60%;
+    --sidebar-primary-foreground: 222 47% 11%;
+    --sidebar-accent: 217 32% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 32% 17%;
+    --sidebar-ring: 217 91% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
