@@ -2,7 +2,7 @@ import { useState, useCallback, useRef } from "react";
 import { Message } from "@/components/ChatMessage";
 import { toast } from "@/hooks/use-toast";
 
-const VITE_API_URL = import.meta.env.VITE_API_URL;
+const VITE_API_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 export const useChat = () => {
   const [messages, setMessages] = useState<Message[]>([]);
@@ -41,7 +41,7 @@ export const useChat = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "Authorization": `Bearer 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`,
+            "Authorization": `Bearer ${apiKey}`,
           },
           body: JSON.stringify({
             model: "openai/gpt-3.5-turbo",

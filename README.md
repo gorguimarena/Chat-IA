@@ -95,7 +95,8 @@ L'application peut être déployée sur n'importe quelle plateforme supportant l
 
 ### Variables d'environnement
 
-- `VITE_OPENROUTER_API_KEY` : Clé API OpenRouter (optionnel)
+- `VITE_OPENROUTER_API_KEY` : Clé API OpenRouter (obligatoire pour les réponses IA en temps réel)
+- `VITE_API_URL` : Clé API OpenRouter
 
 ### Thèmes
 
